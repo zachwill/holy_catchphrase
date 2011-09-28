@@ -14,7 +14,32 @@ body{
     margin-top: 75px;
 }
 
-.btn.primary{
+.btn{
     text-align: center;
     width: 150px;
+    &:focus{
+        outline: none;
+    }
+}
+
+.action{
+    background: blue;
+    color: white;
+    display: none;
+    height: 150px;
+    left: 150px;
+    position: absolute;
+    top: 150px;
+    width: 150px;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+}
+
+.rotate{
+    -o-transform: rotate(720deg) scale(2);
+    -ms-transform: rotate(720deg) scale(2);
+    -moz-transform: rotate(720deg) scale(2);
+    -webkit-transform: rotate(720deg) scale(2);
 }
