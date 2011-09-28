@@ -21,8 +21,8 @@ ACTION_WORDS = BATMAN_WORDS['actions']
 @views.route('/')
 def home():
     """Render the website's home page."""
-    catchphrase = random_choice()
-    action = random_choice('action')
+    random_data = random_choices('internal')
+    action, catchphrase = random_data['action'], random_data['catchphrase']
     return render_template('home.html', action=action, catchphrase=catchphrase)
 
 
@@ -30,6 +30,7 @@ def home():
 @views.route('/api')
 def interface(endpoint=None):
     """API for available catchphrases and action words."""
+    # Local variables are faster.
     catchphrases, action_words = CATCHPHRASES, ACTION_WORDS
     if 'catchphrase' in endpoint:
         data = {'catchphrases': catchphrases}
@@ -40,17 +41,19 @@ def interface(endpoint=None):
     return jsonify(data)
 
 
-@views.route('/random/<endpoint>')
+@views.route('/random/<environment>')
 @views.route('/random')
-def random_choice(endpoint='catchphrase'):
+def random_choices(environment='external'):
     """Return a random catchphrase or action word."""
     # Local variables are faster.
     catchphrases, action_words = CATCHPHRASES, ACTION_WORDS
-    if 'action' in endpoint:
-        choice = random.choice(action_words)
-    else:
-        choice = random.choice(catchphrases)
-    return choice
+    data = {
+        'action': random.choice(action_words),
+        'catchphrase': random.choice(catchphrases)
+    }
+    if environment == 'internal':
+        return data
+    return jsonify(data)
 
 
 # The functions below should be applicable to all Flask apps.
