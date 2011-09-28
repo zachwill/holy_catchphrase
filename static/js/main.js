@@ -17,7 +17,9 @@
         }, 1400);
 
         setTimeout(function(e) {
-            var action = window._action;
+            var action = window._action,
+                button = $('.btn');
+            button.attr('disabled', false);
             action.hide();
         }, 2400);
     }
@@ -25,10 +27,12 @@
 
     var button = $('.btn');
     button.click(function(e) {
-        var action = $('.action'),
-            text = $(this).text() + '!';
+        var self = $(this),
+            action = window._action || $('.action'),
+            text = $(this).text();
 
         e.preventDefault();
+        self.attr('disabled', true);
         action.html(text).show();
         rotate();
 
@@ -38,8 +42,8 @@
             success: function(data) {
                 var button = $('.btn'),
                     catchphrase = $('.catchphrase');
-                catchphrase.text(data.catchphrase);
-                button.text(data.action);
+                catchphrase.html(data.catchphrase);
+                button.html(data.action + '!');
             }
         });
     });
