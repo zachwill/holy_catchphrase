@@ -9,7 +9,7 @@
         setTimeout(function(e) {
             var action = window._action;
             action.addClass('rotate');
-        }, 50);
+        }, 25);
 
         setTimeout(function(e) {
             var action = window._action;
