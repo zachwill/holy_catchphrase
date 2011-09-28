@@ -2,7 +2,6 @@
 # Flask
 # ----------------------
 flask
-flask-wtf
 
 
 # ----------------------
@@ -12,10 +11,9 @@ mock
 
 
 # ----------------------
-# Database
+# Utilities
 # ----------------------
-sqlalchemy
-flask-sqlalchemy
+simplejson
 
 
 # ----------------------

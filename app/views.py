@@ -5,22 +5,52 @@ This file is used for both the routing and logic of your
 application.
 """
 
-from flask import Blueprint, render_template, request, redirect, url_for
+import random
+from flask import Blueprint, render_template, request, jsonify, url_for
+from app.utils import batman_words
 
 views = Blueprint('views', __name__, static_folder='../static',
                   template_folder='../templates')
 
 
+BATMAN_WORDS = batman_words()
+CATCHPHRASES = BATMAN_WORDS['catchphrases']
+ACTION_WORDS = BATMAN_WORDS['actions']
+
+
 @views.route('/')
-def index():
-    """Render website's index page."""
-    return render_template('home.html')
+def home():
+    """Render the website's home page."""
+    catchphrase = random_choice()
+    action = random_choice('action')
+    return render_template('home.html', action=action, catchphrase=catchphrase)
 
 
-@views.route('/about/')
-def about():
-    """Render the website's about page."""
-    return render_template('about.html')
+@views.route('/api/<endpoint>')
+@views.route('/api')
+def interface(endpoint=None):
+    """API for available catchphrases and action words."""
+    catchphrases, action_words = CATCHPHRASES, ACTION_WORDS
+    if 'catchphrase' in endpoint:
+        data = {'catchphrases': catchphrases}
+    elif 'action' in endpoint:
+        data = {'actions': action_words}
+    else:
+        data = BATMAN_WORDS
+    return jsonify(data)
+
+
+@views.route('/random/<endpoint>')
+@views.route('/random')
+def random_choice(endpoint='catchphrase'):
+    """Return a random catchphrase or action word."""
+    # Local variables are faster.
+    catchphrases, action_words = CATCHPHRASES, ACTION_WORDS
+    if 'action' in endpoint:
+        choice = random.choice(action_words)
+    else:
+        choice = random.choice(catchphrases)
+    return choice
 
 
 # The functions below should be applicable to all Flask apps.
@@ -45,7 +75,7 @@ def add_header(response):
     and also to cache the rendered page for 10 minutes.
     """
     response.headers['X-UA-Compatible'] = 'IE=Edge,chrome=1'
-    response.headers['Cache-Control'] = 'public, max-age=600'
+    response.headers['Cache-Control'] = 'public, max-age=300'
     return response
 
 
