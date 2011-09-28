@@ -9,17 +9,17 @@
         setTimeout(function(e) {
             var action = window._action;
             action.addClass('rotate');
-        }, 25);
+        }, 15);
 
         setTimeout(function(e) {
             var action = window._action;
             action.removeClass('rotate')
-        }, 1500);
+        }, 1400);
 
         setTimeout(function(e) {
             var action = window._action;
             action.hide();
-        }, 2500);
+        }, 2400);
     }
 
 
