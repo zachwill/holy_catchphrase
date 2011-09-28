@@ -418,7 +418,7 @@
         "thwacke",
         "thwape",
         "thwapp",
-        "touche",
+        "touché",
         "uggh",
         "urkk",
         "urkkk",
