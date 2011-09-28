@@ -3,7 +3,11 @@
     var button = $('.btn');
 
     button.click(function(e) {
+        var action = $(this).text();
+        console.log(action);
+
         e.preventDefault();
+
         $.ajax({
             cache: false,
             url: '/random',
