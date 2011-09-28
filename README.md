@@ -7,7 +7,8 @@ All the catchphrases and action words I could find from the original
 Adam West Batman TV show, now in a conveniently named web app.
 
 
-### Sources ###
+Sources
+-------
 
 The catchphrases were [taken from this website](http://adamwest.tripod.com/robin.htm).
 
