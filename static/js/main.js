@@ -9,7 +9,7 @@
         setTimeout(function(e) {
             var action = window._action;
             action.addClass('rotate');
-        }, 15);
+        }, 1);
 
         setTimeout(function(e) {
             var action = window._action;
@@ -26,7 +26,7 @@
     var button = $('.btn');
     button.click(function(e) {
         var action = $('.action'),
-            text = $(this).text();
+            text = $(this).text() + '!';
 
         e.preventDefault();
         action.text(text).show();
