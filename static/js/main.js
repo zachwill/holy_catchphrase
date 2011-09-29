@@ -1,11 +1,9 @@
 (function(window, $) {
 
+    window._action = $('.action');
+
     // A function to rotate the action element.
     function rotate() {
-        if (!window._action) {
-            window._action = $('.action');
-        }
-
         setTimeout(function(e) {
             var action = window._action;
             action.addClass('rotate');
@@ -28,7 +26,7 @@
     var button = $('.btn');
     button.click(function(e) {
         var self = $(this),
-            action = window._action || $('.action'),
+            action = window._action,
             text = $(this).text();
 
         e.preventDefault();
