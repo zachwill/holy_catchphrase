@@ -15,7 +15,7 @@ body{
 }
 
 .robin{
-    background: url(/static/img/robin.png) no-repeat center center;
+    background: url(/static/img/robin.png) no-repeat left center;
     height: 600px;
 }
 
@@ -25,28 +25,34 @@ body{
     position: relative;
 }
 
-.btn{
+.btn.large{
     bottom: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
     position: absolute;
+    right: 25%;
     text-align: center;
-    width: 150px;
+    width: 200px;
     &:focus{
         outline: none;
     }
 }
 
 .action{
-    background: blue;
+    background: url(/static/img/kablam.png) no-repeat center center;
+    background-size: 200px;
     color: white;
     display: none;
     font: 32px "Covered By Your Grace", sans-serif;
     left: 50px;
-    min-width: 100px;
     padding: 50px;
     position: absolute;
     text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
     text-transform: uppercase;
     top: 50px;
+    width: 180px;
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;

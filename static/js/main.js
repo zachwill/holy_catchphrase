@@ -31,6 +31,13 @@
 
         e.preventDefault();
         self.attr('disabled', true);
+
+        if (text.length <= 6) {
+            action.css('background-image', 'url(/static/img/kapow.png)');
+        } else {
+            action.css('background-image', '');
+        }
+
         action.html(text).show();
         rotate();
 
