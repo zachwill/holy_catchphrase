@@ -51,7 +51,18 @@
             url: '/random',
             success: function(data) {
                 var button = $('.btn'),
-                    catchphrase = $('.catchphrase');
+                    catchphrase = $('.catchphrase'),
+                    size = '40px';
+
+                if (data.catchphrase.length >= 25) {
+                    if (data.catchphrase.length >= 35) {
+                        size = '35px';
+                    }
+                    catchphrase.css('font-size', size);
+                } else {
+                    catchphrase.css('font-size', '');
+                }
+
                 catchphrase.html(data.catchphrase);
                 button.html(data.action + '!');
             }

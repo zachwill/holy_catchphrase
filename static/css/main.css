@@ -1,13 +1,16 @@
-::-moz-selection{background:#096b90;color:#fff;text-shadow:none;}
+@font-face{font-family:'Folk';src:url('/static/font/Folksolid-webfont.eot');src:url('/static/font/Folksolid-webfont.eot?#iefix') format('embedded-opentype'),url('/static/font/Folksolid-webfont.woff') format('woff'),url('/static/font/Folksolid-webfont.ttf') format('truetype'),url('/static/font/Folksolid-webfont.svg#Folksolid') format('svg');font-weight:normal;font-style:normal;}::-moz-selection{background:#096b90;color:#fff;text-shadow:none;}
 ::selection{background:#096b90;color:#fff;text-shadow:none;}
-body{background:url(/static/img/balloon.png) #b7e6f6 no-repeat 95% -170px;box-shadow:inset 0 0px 5px rgba(0, 0, 0, 0.25);min-width:960px;padding-top:50px;}body:after{content:url(/static/img/kapow.png) url(/static/img/kablam.png);display:none;}
+body{background:url(/static/img/balloon.png) #b7e6f6 no-repeat 95% -170px;box-shadow:inset 0 0px 5px rgba(0, 0, 0, 0.25);min-width:960px;padding-top:25px;}body:after{content:url(/static/img/kapow.png) url(/static/img/kablam.png);display:none;}
 .robin{height:600px;position:relative;}
 .robin_image{height:600px;left:0;position:absolute;top:0;width:100%;}
 .robin_head{background:url(/static/img/robin_head.png) no-repeat left center;height:600px;left:0;position:absolute;top:0;width:100%;z-index:3;}
 .robin_body{background:url(/static/img/robin_body.png) no-repeat left center;position:absolute;height:600px;left:0;position:absolute;top:0;width:100%;z-index:2;}
 .content{height:500px;position:relative;}
-.holy,.batman{display:block;}
+h1{font:48px 'Folk',sans-serif;}
+.holy,.batman{color:#be1a8d;display:block;padding:10px 0;text-shadow:-1px 1px 1px #91146c;text-transform:lowercase;}
 .btn.large{bottom:0;display:block;margin:0 auto;padding:20px 0;position:absolute;text-align:center;width:200px;}.btn.large:focus{outline:none;}
-.action{background:url(/static/img/kablam.png) no-repeat center center;background-size:200px;color:white;display:none;font:28px "Covered By Your Grace",sans-serif;left:-75px;padding:50px;position:absolute;text-align:center;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);text-transform:uppercase;top:0;width:180px;-o-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-webkit-transition:all 1s ease-in-out;}
+.action{background:url(/static/img/kablam.png) no-repeat center center;background-size:200px;color:white;display:none;font:28px "Covered By Your Grace",sans-serif;left:-75px;padding:50px;position:absolute;text-align:center;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);text-transform:uppercase;top:40px;width:180px;-o-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-webkit-transition:all 1s ease-in-out;}
 .rotate{-o-transform:rotate(360deg) scale(2);-ms-transform:rotate(360deg) scale(2);-moz-transform:rotate(360deg) scale(2);-webkit-transform:rotate(360deg) scale(2);}
-footer{background:#fff;border-top:1px solid #95ddf6;height:600px;padding-top:75px;}footer h2{text-align:right;}
+footer{background:#fff;border-top:1px solid #95ddf6;min-height:600px;padding-bottom:75px;}footer h2{font:60px 'Folk',sans-serif;text-align:right;}
+footer p{line-height:1.7;padding:10px 0;text-align:justify;}
+footer .row{padding-top:75px;}
