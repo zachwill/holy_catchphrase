@@ -15,14 +15,33 @@ body{
     min-width: 960px;
     padding-top: 50px;
     &:after{
-        content: url(/static/img/kapow) url(/static/img/kablam) url(/static/img/robin);
+        content: url(/static/img/kapow.png) url(/static/img/kablam.png);
         display: none;
     }
 }
 
 .robin{
-    background: url(/static/img/robin.png) no-repeat left center;
     height: 600px;
+    position: relative;
+}
+
+.robin_image{
+    height: 600px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.robin_head{
+    background: url(/static/img/robin_head.png) no-repeat left center;
+    .robin_image;
+    z-index: 3;
+}
+.robin_body{
+    background: url(/static/img/robin_body.png) no-repeat left center;
+    position: absolute;
+    .robin_image;
+    z-index: 2;
 }
 
 .content{

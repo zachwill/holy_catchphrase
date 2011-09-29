@@ -1,7 +1,10 @@
 ::-moz-selection{background:#096b90;color:#fff;text-shadow:none;}
 ::selection{background:#096b90;color:#fff;text-shadow:none;}
-body{background:url(/static/img/balloon.png) no-repeat 95% -170px;min-width:960px;padding-top:50px;}body:after{content:url(/static/img/kapow) url(/static/img/kablam) url(/static/img/robin);display:none;}
-.robin{background:url(/static/img/robin.png) no-repeat left center;height:600px;}
+body{background:url(/static/img/balloon.png) no-repeat 95% -170px;min-width:960px;padding-top:50px;}body:after{content:url(/static/img/kapow.png) url(/static/img/kablam.png);display:none;}
+.robin{height:600px;position:relative;}
+.robin_image{height:600px;left:0;position:absolute;top:0;width:100%;}
+.robin_head{background:url(/static/img/robin_head.png) no-repeat left center;height:600px;left:0;position:absolute;top:0;width:100%;z-index:3;}
+.robin_body{background:url(/static/img/robin_body.png) no-repeat left center;position:absolute;height:600px;left:0;position:absolute;top:0;width:100%;z-index:2;}
 .content{height:500px;position:relative;}
 .holy,.batman{display:block;}
 .btn.large{bottom:0;display:block;margin:0 auto;padding:20px 0;position:absolute;text-align:center;width:200px;}.btn.large:focus{outline:none;}

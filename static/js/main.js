@@ -58,4 +58,22 @@
         });
     });
 
+
+    var head = $('.robin_head'),
+        body = $('.robin_body');
+
+
+    body.plaxify({
+        'xRange': 10,
+        'yRange': 10,
+        'invert': true
+    });
+
+    head.plaxify({
+        'xRange': 20,
+        'yRange': 20
+    });
+
+    $.plax.enable();
+
 })(window, jQuery);
