@@ -1,6 +1,6 @@
 ::-moz-selection{background:#096b90;color:#fff;text-shadow:none;}
 ::selection{background:#096b90;color:#fff;text-shadow:none;}
-body{background:url(/static/img/balloon.png) no-repeat 95% -170px;min-width:960px;padding-top:50px;}body:after{content:url(/static/img/kapow.png) url(/static/img/kablam.png);display:none;}
+body{background:url(/static/img/balloon.png) #b7e6f6 no-repeat 95% -170px;min-width:960px;padding-top:50px;}body:after{content:url(/static/img/kapow.png) url(/static/img/kablam.png);display:none;}
 .robin{height:600px;position:relative;}
 .robin_image{height:600px;left:0;position:absolute;top:0;width:100%;}
 .robin_head{background:url(/static/img/robin_head.png) no-repeat left center;height:600px;left:0;position:absolute;top:0;width:100%;z-index:3;}

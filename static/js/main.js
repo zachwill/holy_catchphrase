@@ -62,16 +62,15 @@
     var head = $('.robin_head'),
         body = $('.robin_body');
 
-
     body.plaxify({
-        'xRange': 10,
-        'yRange': 10,
-        'invert': true
+        xRange: 10,
+        yRange: 10,
+        invert: true
     });
 
     head.plaxify({
-        'xRange': 20,
-        'yRange': 10
+        xRange: 15,
+        yRange: 10
     });
 
     $.plax.enable();
