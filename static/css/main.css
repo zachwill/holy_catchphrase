@@ -1,6 +1,6 @@
 ::-moz-selection{background:#096b90;color:#fff;text-shadow:none;}
 ::selection{background:#096b90;color:#fff;text-shadow:none;}
-body{background:url(/static/img/balloon.png) #b7e6f6 no-repeat 95% -170px;min-width:960px;padding-top:50px;}body:after{content:url(/static/img/kapow.png) url(/static/img/kablam.png);display:none;}
+body{background:url(/static/img/balloon.png) #b7e6f6 no-repeat 95% -170px;box-shadow:inset 0 0px 5px rgba(0, 0, 0, 0.25);min-width:960px;padding-top:50px;}body:after{content:url(/static/img/kapow.png) url(/static/img/kablam.png);display:none;}
 .robin{height:600px;position:relative;}
 .robin_image{height:600px;left:0;position:absolute;top:0;width:100%;}
 .robin_head{background:url(/static/img/robin_head.png) no-repeat left center;height:600px;left:0;position:absolute;top:0;width:100%;z-index:3;}
@@ -10,3 +10,4 @@ body{background:url(/static/img/balloon.png) #b7e6f6 no-repeat 95% -170px;min-wi
 .btn.large{bottom:0;display:block;margin:0 auto;padding:20px 0;position:absolute;text-align:center;width:200px;}.btn.large:focus{outline:none;}
 .action{background:url(/static/img/kablam.png) no-repeat center center;background-size:200px;color:white;display:none;font:28px "Covered By Your Grace",sans-serif;left:-75px;padding:50px;position:absolute;text-align:center;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);text-transform:uppercase;top:0;width:180px;-o-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-webkit-transition:all 1s ease-in-out;}
 .rotate{-o-transform:rotate(360deg) scale(2);-ms-transform:rotate(360deg) scale(2);-moz-transform:rotate(360deg) scale(2);-webkit-transform:rotate(360deg) scale(2);}
+footer{background:#fff;border-top:1px solid #95ddf6;height:600px;padding-top:75px;}footer h2{text-align:right;}
