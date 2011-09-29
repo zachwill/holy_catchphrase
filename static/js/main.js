@@ -7,7 +7,7 @@
         setTimeout(function(e) {
             var action = window._action;
             action.addClass('rotate');
-        }, 10);
+        }, 20);
 
         setTimeout(function(e) {
             var action = window._action;
