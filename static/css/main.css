@@ -1,6 +1,8 @@
 ::-moz-selection{background:#8fc829;color:#fff;text-shadow:none;}
 ::selection{background:#8fc829;color:#fff;text-shadow:none;}
 body{margin-top:75px;}
-.btn{text-align:center;width:150px;}.btn:focus{outline:none;}
-.action{background:blue;color:white;display:none;font:32px "Covered By Your Grace",sans-serif;left:150px;min-width:100px;padding:50px;position:absolute;text-align:center;text-transform:uppercase;top:150px;-o-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-webkit-transition:all 1s ease-in-out;}
+.robin{background:url(/static/img/robin.png) no-repeat center center;height:600px;}
+.content{height:400px;padding-top:100px;position:relative;}
+.btn{bottom:0;position:absolute;text-align:center;width:150px;}.btn:focus{outline:none;}
+.action{background:blue;color:white;display:none;font:32px "Covered By Your Grace",sans-serif;left:50px;min-width:100px;padding:50px;position:absolute;text-align:center;text-transform:uppercase;top:50px;-o-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-webkit-transition:all 1s ease-in-out;}
 .rotate{-o-transform:rotate(720deg) scale(2);-ms-transform:rotate(720deg) scale(2);-moz-transform:rotate(720deg) scale(2);-webkit-transform:rotate(720deg) scale(2);}
