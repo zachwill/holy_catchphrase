@@ -1,8 +1,8 @@
 ::-moz-selection{background:#8fc829;color:#fff;text-shadow:none;}
 ::selection{background:#8fc829;color:#fff;text-shadow:none;}
-body{margin-top:75px;}
+body{margin-top:75px;}body:after{content:url(/static/img/kapow) url(/static/img/kablam) url(/static/img/robin);display:none;}
 .robin{background:url(/static/img/robin.png) no-repeat left center;height:600px;}
 .content{height:400px;padding-top:100px;position:relative;}
 .btn.large{bottom:0;display:block;margin:0 auto;padding:20px 0;position:absolute;right:25%;text-align:center;width:200px;}.btn.large:focus{outline:none;}
 .action{background:url(/static/img/kablam.png) no-repeat center center;background-size:200px;color:white;display:none;font:28px "Covered By Your Grace",sans-serif;left:50px;padding:50px;position:absolute;text-align:center;text-shadow:0 1px 1px rgba(0, 0, 0, 0.2);text-transform:uppercase;top:50px;width:180px;-o-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-webkit-transition:all 1s ease-in-out;}
-.rotate{-o-transform:rotate(720deg) scale(2);-ms-transform:rotate(720deg) scale(2);-moz-transform:rotate(720deg) scale(2);-webkit-transform:rotate(720deg) scale(2);}
+.rotate{-o-transform:rotate(360deg) scale(2);-ms-transform:rotate(360deg) scale(2);-moz-transform:rotate(360deg) scale(2);-webkit-transform:rotate(360deg) scale(2);}

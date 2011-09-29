@@ -12,6 +12,10 @@
 
 body{
     margin-top: 75px;
+    &:after{
+        content: url(/static/img/kapow) url(/static/img/kablam) url(/static/img/robin);
+        display: none;
+    }
 }
 
 .robin{
@@ -60,8 +64,8 @@ body{
 }
 
 .rotate{
-    -o-transform: rotate(720deg) scale(2);
-    -ms-transform: rotate(720deg) scale(2);
-    -moz-transform: rotate(720deg) scale(2);
-    -webkit-transform: rotate(720deg) scale(2);
+    -o-transform: rotate(360deg) scale(2);
+    -ms-transform: rotate(360deg) scale(2);
+    -moz-transform: rotate(360deg) scale(2);
+    -webkit-transform: rotate(360deg) scale(2);
 }
