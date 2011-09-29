@@ -71,7 +71,7 @@
 
     head.plaxify({
         'xRange': 20,
-        'yRange': 20
+        'yRange': 10
     });
 
     $.plax.enable();
