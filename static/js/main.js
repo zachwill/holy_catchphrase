@@ -1,6 +1,8 @@
 (function(window, $) {
 
+    // Globally cache the action element.
     window._action = $('.action');
+
 
     // A function to rotate the action element.
     function rotate() {
@@ -23,6 +25,7 @@
     }
 
 
+    // Rotate action element on button click.
     var button = $('.btn');
     button.click(function(e) {
         var self = $(this),
@@ -70,6 +73,7 @@
     });
 
 
+    // Give Robin's body a parallax effect.
     var head = $('.robin_head'),
         body = $('.robin_body');
 
@@ -85,5 +89,6 @@
     });
 
     $.plax.enable();
+
 
 })(window, jQuery);
