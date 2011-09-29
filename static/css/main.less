@@ -1,4 +1,5 @@
 @teal: #096b90;
+@pink: #be1a8d;
 
 @font-face {
     font-family: 'Folk';
@@ -17,8 +18,8 @@
 
 
 /* Custom highlight */
-::-moz-selection{ background:@teal; color:#fff; text-shadow: none; }
-::selection { background:@teal; color:#fff; text-shadow: none; }
+::-moz-selection{ background:@pink; color:#fff; text-shadow: -1px 1px 1px darken(@pink, 15%); }
+::selection { background:@pink; color:#fff; text-shadow: -1px 1px 1px darken(@pink, 15%); }
 
 
 body{
@@ -67,12 +68,16 @@ h1{
     font: 48px 'Folk', sans-serif;
 }
 
-.holy, .batman{
+.pink-text{
     color: #be1a8d;
+    text-shadow: -1px 1px 1px darken(#be1a8d, 10%);
+}
+
+.holy, .batman{
     display: block;
     padding: 10px 0;
-    text-shadow: -1px 1px 1px darken(#be1a8d, 10%);
     text-transform: lowercase;
+    .pink-text;
 }
 
 .btn.large{
@@ -82,6 +87,7 @@ h1{
     padding: 20px 0;
     position: absolute;
     text-align: center;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, .25);
     width: 200px;
     &:focus{
         outline: none;
@@ -123,6 +129,7 @@ footer{
     h2{
         font: 60px 'Folk', sans-serif;
         text-align: right;
+        .pink-text;
     }
     p{
         line-height: 1.7;
