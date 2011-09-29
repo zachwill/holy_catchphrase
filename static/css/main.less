@@ -1,4 +1,4 @@
-@green: #8fc829;
+@teal: #096b90;
 
 /* Link Color and Styles */
 /* a, a:active, a:visited { color: @green; } */
@@ -6,12 +6,13 @@
 
 
 /* Custom highlight */
-::-moz-selection{ background:@green; color:#fff; text-shadow: none; }
-::selection { background:@green; color:#fff; text-shadow: none; }
+::-moz-selection{ background:@teal; color:#fff; text-shadow: none; }
+::selection { background:@teal; color:#fff; text-shadow: none; }
 
 
 body{
-    margin-top: 75px;
+    background: url(/static/img/balloon.png) no-repeat 95% -170px;
+    padding-top: 50px;
     &:after{
         content: url(/static/img/kapow) url(/static/img/kablam) url(/static/img/robin);
         display: none;
@@ -25,7 +26,6 @@ body{
 
 .content{
     height: 400px;
-    padding-top: 100px;
     position: relative;
 }
 
