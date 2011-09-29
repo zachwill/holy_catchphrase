@@ -15,3 +15,4 @@ h1{font:48px 'Folk',sans-serif;}
 footer{background:#fff;border-top:1px solid #95ddf6;min-height:600px;padding-bottom:75px;}footer h2{font:60px 'Folk',sans-serif;text-align:right;color:#be1a8d;text-shadow:-1px 1px 1px #91146c;}
 footer p{line-height:1.7;padding:10px 0;text-align:justify;}
 footer .row{padding-top:75px;}
+footer .super_z{background:url(/static/img/super_z.png) no-repeat center 7px;display:block;height:60px;margin:0 auto;text-indent:-999em;width:70px;}footer .super_z:hover{background-position-y:-83px;}
