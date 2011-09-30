@@ -28,7 +28,7 @@ def home():
 
 @views.route('/api/<endpoint>')
 @views.route('/api')
-def interface(endpoint=None):
+def interface(endpoint=""):
     """API for available catchphrases and action words."""
     # Local variables are faster.
     catchphrases, action_words = CATCHPHRASES, ACTION_WORDS
